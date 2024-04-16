@@ -37,7 +37,6 @@ public class Main {
             escrita.write(gsonBonitinho.toJson(movieResponse.getResults()));
             escrita.close();
 
-            // Print titles to console (optional)
             for (Movie movie : movieResponse.getResults()) {
                 System.out.println(movie.getTitle());
             }
